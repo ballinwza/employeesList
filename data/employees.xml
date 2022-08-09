@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 09, 2022 at 08:08 PM
+- Server version: 10.4.13-MariaDB
+- PHP Version: 7.4.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="employeesystem" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="employees">
+                CREATE TABLE `employees` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(100) NOT NULL,
+                  `age` int(10) NOT NULL,
+                  `country` varchar(100) NOT NULL,
+                  `position` varchar(100) NOT NULL,
+                  `salary` int(10) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'employeesystem'
+    -->
+    <database name="employeesystem">
+        <!-- Table employees -->
+        <table name="employees">
+            <column name="id">1</column>
+            <column name="name">Tradon</column>
+            <column name="age">27</column>
+            <column name="country">Thailand</column>
+            <column name="position">Developer</column>
+            <column name="salary">10000</column>
+        </table>
+        <table name="employees">
+            <column name="id">2</column>
+            <column name="name">Tom</column>
+            <column name="age">22</column>
+            <column name="country">English</column>
+            <column name="position">Back-end</column>
+            <column name="salary">30000</column>
+        </table>
+    </database>
+</pma_xml_export>

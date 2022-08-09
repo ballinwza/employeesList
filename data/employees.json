@@ -1,0 +1,10 @@
+[
+{"type":"header","version":"5.0.2","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"employeesystem"},
+{"type":"table","name":"employees","database":"employeesystem","data":
+[
+{"id":"1","name":"Tradon","age":"27","country":"Thailand","position":"Developer","salary":"10000"},
+{"id":"2","name":"Tom","age":"22","country":"English","position":"Back-end","salary":"30000"}
+]
+}
+]
